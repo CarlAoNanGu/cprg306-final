@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Header onSearch={fetchMovies} onSort={handleSort} />
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto py-8 text-black">  {/* Added text-black class */}
         {loading ? (
           <p className="text-center">Loading...</p>
         ) : filteredMovies.length > 0 ? (
